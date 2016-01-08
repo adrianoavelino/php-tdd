@@ -11,7 +11,7 @@ class ConversorDeNumeroRomano extends PHPUnit
     public function testDeveEntenderOSimboloI() 
     {
         $romano = new ConversorDeNumeroRomano();
-        $numero = $romano->converte("I");
+        $numero = $romano->converter();
         $this->assertEquals(1, $numero);
     }
     
