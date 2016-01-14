@@ -5,28 +5,41 @@ namespace CDC\Loja\Produto;
 class Produto
 {
     private$nome;
-    private $valor;
+    private $valorUnitario;
+    private $quantidade;
 
     /**
      * @codeCoverageIgnore
      * @param type $nome
      * @param type $valor
      */
-    public function __construct($nome, $valor)
+    public function __construct($nome, $valorUnitario, $quantidade = 1)
     {
         $this->nome = $nome;
-        $this->valor = $valor;
+        $this->valorUnitario = $valorUnitario;
+        $this->quantidade = $quantidade;
     }
 
     function getNome()
     {
         return $this->nome;
     }
-
-    function getValor()
+    
+    function getValorUnitario() 
     {
-        return $this->valor;
+        return $this->valorUnitario;
     }
+
+    function getQuantidade() 
+    {
+        return $this->quantidade;
+    }
+
+    public function getValorTotal() 
+    {
+        return $this->valorUnitario * $this->quantidade;
+    }
+    
 
 
 }
