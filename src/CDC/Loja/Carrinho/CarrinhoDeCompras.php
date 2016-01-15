@@ -43,5 +43,26 @@ class CarrinhoDeCompras
         }
         return $maiorValor;
     }
+    
+    
+//    public function maiorValor() 
+//    {
+//        
+//        if (count($this->getProdutos())  === 0) {
+//            
+//            return 0;
+//        }
+//        
+//        $maiorValor = $this->getProdutos()[0]->getValorTotal();
+//        
+//        foreach ($this->getProdutos() as $produto) {
+//            if ($maiorValor < $produto->getValorTotal()) {
+//                $maiorValor = $produto->getValorTotal();
+//            }
+//        }
+//        
+//        return $maiorValor;
+//    }
+        
 
 }
