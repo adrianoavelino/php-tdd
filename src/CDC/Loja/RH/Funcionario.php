@@ -1,29 +1,34 @@
 <?php
+
 namespace CDC\Loja\RH;
 
-class Funcionario {
+class Funcionario
+{
 
-    protected  $nome;
+    protected $nome;
     protected $salario;
     protected $cargo;
-    
-    public function __construct($nome, $salario, $cargo) {
+
+    public function __construct($nome, $salario, $cargo)
+    {
         $this->nome = $nome;
         $this->salario = $salario;
         $this->cargo = $cargo;
     }
-    
-    function getNome() {
+
+    public function getNome()
+    {
         return $this->nome;
     }
 
-    function getSalario() {
+    public function getSalario()
+    {
         return $this->salario;
     }
 
-    function getCargo() {
+    public function getCargo()
+    {
         return $this->cargo;
     }
-
 
 }

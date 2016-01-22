@@ -1,11 +1,12 @@
 <?php
+
 namespace CDC\Loja\RH;
+
 use CDC\Loja\RH\Funcionario;
-/**
- * @codeCoverageIgnore
- */
+
 abstract class RegraDeCalculo
 {
+
     public function calcula(Funcionario $funcionario)
     {
         $salario = $funcionario->getSalario();
@@ -14,7 +15,11 @@ abstract class RegraDeCalculo
         }
         return $salario * $this->porcentagemBase();
     }
+
     protected function limite(){}
+
     protected function porcentagemAcimaDoLimite(){}
+
     protected function porcentagemBase(){}
+
 }
